@@ -80,3 +80,30 @@ button:hover {
 #clear-all:hover {
     background: #a71d2a;
 }
+
+
+
+button {
+    transition: all 0.3s ease-in-out;
+}
+
+button:hover {
+    transform: scale(1.05);
+}
+
+#clear-all {
+    margin-top: 10px;
+    background: #dc3545;
+    color: white;
+    font-size: 16px;
+}
+
+#clear-all:hover {
+    background: #a71d2a;
+}
+
+form input:focus,
+button:hover {
+    outline: 2px solid #007bff;
+    outline-offset: 2px;
+}
