@@ -69,3 +69,14 @@ button:hover {
     padding: 10px;
     border-bottom: 1px solid #ddd;
 }
+
+#clear-all {
+    margin-top: 10px;
+    background: #dc3545;
+    color: white;
+    font-size: 16px;
+}
+
+#clear-all:hover {
+    background: #a71d2a;
+}

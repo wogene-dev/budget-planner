@@ -7,10 +7,42 @@ const totalIncomeDisplay = document.getElementById("total-income");
 const totalExpensesDisplay = document.getElementById("total-expenses");
 const balanceDisplay = document.getElementById("balance");
 const expensesList = document.getElementById("expenses");
+const clearAllButton = document.getElementById("clear-all");
 
 // Initialize variables 
 let income = 0;
 let expenses = [];
+
+// Function to clear all data
+function clearAll() {
+    // Reset variables
+    income = 0;
+    expenses = [];
+
+    // Reset input fields
+    incomeInput.value = "";
+    expenseNameInput.value = "";
+    expenseAmountInput.value = "";
+
+    // Clear expenses list
+    expensesList.innerHTML = "";
+
+    // Update summary
+    updateSummary();
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 // Function to update the summary
 function updateSummary() {
@@ -51,3 +83,6 @@ incomeInput.addEventListener("input", () => {
 });
 
 addExpenseButton.addEventListener("click", addExpense);
+
+
+clearAllButton.addEventListener("click", clearAll);
