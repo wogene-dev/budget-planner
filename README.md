@@ -51,5 +51,11 @@ Open the index.html file in a web browser.
 
 
 
+Demo
+
+Click here to view the live demo : https://wogene-dev.github.io/budget-planner/
+
+
+
 
 
